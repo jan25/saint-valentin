@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bc6deb0.chunk.css",
-    "main.js": "/static/js/main.4d2cd8fb.chunk.js",
-    "main.js.map": "/static/js/main.4d2cd8fb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.02b0d242.js",
-    "runtime-main.js.map": "/static/js/runtime-main.02b0d242.js.map",
-    "static/js/2.d92c0c95.chunk.js": "/static/js/2.d92c0c95.chunk.js",
-    "static/js/2.d92c0c95.chunk.js.map": "/static/js/2.d92c0c95.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.0bc6deb0.chunk.css.map": "/static/css/main.0bc6deb0.chunk.css.map",
-    "static/js/2.d92c0c95.chunk.js.LICENSE.txt": "/static/js/2.d92c0c95.chunk.js.LICENSE.txt"
+    "main.css": "/jan25.github.io/saint-valentin/static/css/main.0bc6deb0.chunk.css",
+    "main.js": "/jan25.github.io/saint-valentin/static/js/main.4d2cd8fb.chunk.js",
+    "main.js.map": "/jan25.github.io/saint-valentin/static/js/main.4d2cd8fb.chunk.js.map",
+    "runtime-main.js": "/jan25.github.io/saint-valentin/static/js/runtime-main.4d50a510.js",
+    "runtime-main.js.map": "/jan25.github.io/saint-valentin/static/js/runtime-main.4d50a510.js.map",
+    "static/js/2.d92c0c95.chunk.js": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js",
+    "static/js/2.d92c0c95.chunk.js.map": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js.map",
+    "index.html": "/jan25.github.io/saint-valentin/index.html",
+    "static/css/main.0bc6deb0.chunk.css.map": "/jan25.github.io/saint-valentin/static/css/main.0bc6deb0.chunk.css.map",
+    "static/js/2.d92c0c95.chunk.js.LICENSE.txt": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.02b0d242.js",
+    "static/js/runtime-main.4d50a510.js",
     "static/js/2.d92c0c95.chunk.js",
     "static/css/main.0bc6deb0.chunk.css",
     "static/js/main.4d2cd8fb.chunk.js"
