@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jan25.github.io/saint-valentin/static/css/main.0bc6deb0.chunk.css",
-    "main.js": "/jan25.github.io/saint-valentin/static/js/main.4d2cd8fb.chunk.js",
-    "main.js.map": "/jan25.github.io/saint-valentin/static/js/main.4d2cd8fb.chunk.js.map",
-    "runtime-main.js": "/jan25.github.io/saint-valentin/static/js/runtime-main.4d50a510.js",
-    "runtime-main.js.map": "/jan25.github.io/saint-valentin/static/js/runtime-main.4d50a510.js.map",
-    "static/js/2.d92c0c95.chunk.js": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js",
-    "static/js/2.d92c0c95.chunk.js.map": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js.map",
-    "index.html": "/jan25.github.io/saint-valentin/index.html",
-    "static/css/main.0bc6deb0.chunk.css.map": "/jan25.github.io/saint-valentin/static/css/main.0bc6deb0.chunk.css.map",
-    "static/js/2.d92c0c95.chunk.js.LICENSE.txt": "/jan25.github.io/saint-valentin/static/js/2.d92c0c95.chunk.js.LICENSE.txt"
+    "main.css": "/saint-valentin/static/css/main.0bc6deb0.chunk.css",
+    "main.js": "/saint-valentin/static/js/main.4d2cd8fb.chunk.js",
+    "main.js.map": "/saint-valentin/static/js/main.4d2cd8fb.chunk.js.map",
+    "runtime-main.js": "/saint-valentin/static/js/runtime-main.1d3a27e9.js",
+    "runtime-main.js.map": "/saint-valentin/static/js/runtime-main.1d3a27e9.js.map",
+    "static/js/2.d92c0c95.chunk.js": "/saint-valentin/static/js/2.d92c0c95.chunk.js",
+    "static/js/2.d92c0c95.chunk.js.map": "/saint-valentin/static/js/2.d92c0c95.chunk.js.map",
+    "index.html": "/saint-valentin/index.html",
+    "static/css/main.0bc6deb0.chunk.css.map": "/saint-valentin/static/css/main.0bc6deb0.chunk.css.map",
+    "static/js/2.d92c0c95.chunk.js.LICENSE.txt": "/saint-valentin/static/js/2.d92c0c95.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d50a510.js",
+    "static/js/runtime-main.1d3a27e9.js",
     "static/js/2.d92c0c95.chunk.js",
     "static/css/main.0bc6deb0.chunk.css",
     "static/js/main.4d2cd8fb.chunk.js"
