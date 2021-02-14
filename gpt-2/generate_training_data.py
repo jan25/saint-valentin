@@ -1,3 +1,6 @@
+"""
+Generates training data and prefixes for generating new letters.
+"""
 import json
 from os import listdir
 from os.path import isfile, join
@@ -28,6 +31,6 @@ def write_file(file_name, data):
         else:
             file.write(data)
 
-write_file("concated", concated_files)
-write_file("prefixes", prefixes)
+write_file("input_letters", concated_files)
+write_file("generate_with_prefixes", prefixes)
 
