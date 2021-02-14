@@ -18,4 +18,4 @@ Training data is inspired by [kaggle dataset](https://www.kaggle.com/fillerink/l
 
 ## React app
 
-S single screen app to view the generated letters with chosen starting words. Checkout `app` folder. View generated letters at [jan25/saint-valentin](https://jan25.github.io/saint-valentin)
+A single screen app to view the generated letters with chosen starting words. Checkout `app` folder. View generated letters at [jan25/saint-valentin](https://jan25.github.io/saint-valentin)
