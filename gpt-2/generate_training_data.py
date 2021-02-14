@@ -14,7 +14,8 @@ for f in listdir(DIR_PATH):
     file_path = join(DIR_PATH, f)
     if not isfile(file_path): continue
 
-    if len(prefixes) < 25:
+    # take some 25 prefixes out of available
+    if len(prefixes) < 25: 
         with open(file_path) as file:
             words = file.read().split(" ")[:20]
             prefixes.append(" ".join(map(lambda w: w.replace("\n", " "), words)))

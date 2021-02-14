@@ -3,27 +3,20 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
-import generatedLetters from './generated_letters.json';
-
-const searchLength = 100;
-
-let prefixes = []
-for (let l of generatedLetters) {
-  const [prefix] = Object.keys(l);
-  prefixes.push(prefix);
-}
+import { getPrefixes } from './generated';
 
 // TODO: Make this optional. Type a random letter on each refresh.
-export default function Search() {
+export default function Search(props) {
   return (
     <Autocomplete
       id="search-box"
       style={{ margin: "auto", marginTop: "2%" }}
       size="small"
       fullWidth={true}
-      options={prefixes}
+      options={getPrefixes()}
       blurOnSelect={true}
       autoComplete={true}
+      selectOnFocus={true}
       freeSolo
       getOptionLabel={(option) => option}
       renderInput={(params) => (
@@ -43,6 +36,8 @@ export default function Search() {
           </div>
         );
       }}
+      value={props.prefix}
+      onChange={(_, prefix) => props.onSelect(prefix)}
     />
   );
 }

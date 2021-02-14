@@ -11,25 +11,41 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Letter() {
+export default function Letter(props) {
   const classes = useStyles();
-  const [typed, setTyped] = useState({ idx: 0, text: "" })
+  const [typed, setTyped] = useState({
+    idx: 0,
+    text: "",
+    letter: ""
+  });
+
+  useEffect(() => {
+    const {prefix, letter} = props;
+    setTyped({
+      idx: prefix.length,
+      text: prefix,
+      letter: letter,
+    })
+  }, [props.prefix])
 
   useEffect(() => {
     const idx = typed.idx;
-    if (idx >= letter.length) return;
+    if (!typed.letter || idx >= typed.letter.length) return;
 
-    const prevChar = idx == 0 ? '-' : letter[idx - 1];
-    const currChar = letter[idx];
+    const prevChar = idx == 0 ? '-' : typed.letter[idx - 1];
+    const currChar = typed.letter[idx];
     const keyStrokeDelay = getDistance(prevChar, currChar) * 4;
 
-    setTimeout(() => {
+    const timeoutID = setTimeout(() => {
       setTyped({
+        ...typed,
         idx: idx + 1,
         text: typed.text + currChar
       })
     }, keyStrokeDelay);
-  }, [typed.text])
+
+    return () => clearTimeout(timeoutID);
+  }, [typed])
 
   return (
     <div className={classes.root}>
@@ -39,8 +55,3 @@ export default function Letter() {
     </div>
   );
 }
-
-// const letter = "body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit,"
-const letter = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum orci, ac mattis ipsum luctus id. Mauris facilisis, sem in vehicula aliquam, tellus nisl eleifend massa, eget mattis neque lacus nec elit. Sed at lacus lorem. Quisque lobortis diam id odio consequat suscipit. Quisque aliquet risus at rutrum euismod. Mauris diam ex, laoreet nec turpis at, finibus auctor risus. Integer sollicitudin a tortor at tincidunt. Quisque placerat leo eget augue placerat, eget mattis neque ornare. Vestibulum ultrices ante ut ipsum commodo feugiat. Morbi id vestibulum nisi. Curabitur fringilla, sem eu tempor commodo, tortor est venenatis tellus, at interdum ligula risus in elit.
-
-Cras nec sodales erat. Nam risus ipsum, sagittis vel vehicula a, aliquam nec turpis. Praesent et pellentesque risus. Fusce laoreet tortor et sem maximus sollicitudin. Integer augue odio, porta id sem sit amet, placerat interdum risus. Aenean eu magna in lacus aliquet mattis vel et mi. Sed dictum tortor et metus pellentesque, sit amet vehicula metus lobortis. Suspendisse eu mauris nec orci aliquet eleifend. Aliquam tempus, sapien ut accumsan vestibulum, sem neque ultrices ligula, eget facilisis ligula orci quis nibh. Nunc vitae interdum leo. Aliquam nec nisi tellus. Duis condimentum est quis faucibus eleifend. Morbi pretium nibh.`
