@@ -5,14 +5,9 @@ import Letter from './Letter';
 import { getRandomPrefix, getGenerated } from './generated';
 
 function App() {
-  const prefix = getRandomPrefix();
-  const [data, setData] = useState({
-    prefix,
-    letter: getGenerated(prefix),
-  });
+  const [data, setData] = useState({});
 
   const onPrefixSelect = (prefix) => {
-    console.log('changed prefix' ,prefix ,getGenerated(prefix));
     setData({
       prefix,
       letter: getGenerated(prefix),

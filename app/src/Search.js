@@ -5,7 +5,6 @@ import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
 import { getPrefixes } from './generated';
 
-// TODO: Make this optional. Type a random letter on each refresh.
 export default function Search(props) {
   return (
     <Autocomplete
@@ -36,7 +35,6 @@ export default function Search(props) {
           </div>
         );
       }}
-      value={props.prefix}
       onChange={(_, prefix) => props.onSelect(prefix)}
     />
   );
